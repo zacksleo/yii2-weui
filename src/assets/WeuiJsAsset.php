@@ -18,6 +18,6 @@ class WeuiJsAsset extends AssetBundle
         'dist/weui.min.js'
     ];
     public $depends = [
-        'moguyun\themes\w1\frontend\assets\WeuiAsset'
+        'zacksleo\yii2\weui\assets\WeuiAsset'
     ];
 }
