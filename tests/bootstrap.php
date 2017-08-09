@@ -9,6 +9,10 @@ new \yii\console\Application([
     'id' => 'unit',
     'basePath' => __DIR__,
     'vendorPath' => __DIR__ . '/../vendor',
+    'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm'   => '@vendor/npm-asset',
+    ],
     'components' => [
         'assetManager' => [
             'basePath' => '@tests/data/assets',
