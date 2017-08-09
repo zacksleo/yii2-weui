@@ -16,7 +16,7 @@ class WeuiAssetTest extends TestCase
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
         WeuiAsset::register($view);
-        $this->assertEquals(2, count($view->assetBundles));
+        $this->assertEquals(1, count($view->assetBundles));
         $this->assertArrayHasKey('zacksleo\\yii2\\assets\WeuiAsset', $view->assetBundles);
         $this->assertTrue($view->assetBundles['zacksleo\\yii2\\weui\assets\WeuiAsset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/data/views/layout.php');
