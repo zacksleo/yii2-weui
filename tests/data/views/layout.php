@@ -11,7 +11,7 @@
     </head>
     <body>
     <?php $this->beginBody(); ?>
-    
+
     <?php $this->endBody(); ?>
     </body>
     </html>
