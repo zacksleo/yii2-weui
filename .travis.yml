@@ -1,0 +1,27 @@
+
+language: php
+
+matrix:
+  fast_finish: true
+
+php:
+  - 5.6
+  - 7.1
+
+  # cache vendor dirs
+cache:
+  directories:
+    - $HOME/.composer/cache
+    - vendor
+
+before_script:
+  - composer self-update
+  - composer update --dev --prefer-dist --no-interaction
+
+
+script:
+  - ./vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
+
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
