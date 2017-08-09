@@ -100,7 +100,7 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
     {
         $view = new View();
         $view->setAssetManager(new AssetManager([
-            'basePath' => '@tests/assets',
+            'basePath' => '@tests/data/assets',
             'baseUrl' => '/',
         ]));
         return $view;
