@@ -11,7 +11,7 @@ new \yii\console\Application([
     'vendorPath' => __DIR__ . '/../vendor',
     'components' => [
         'assetManager' => [
-            'basePath' => '@tests/assets',
+            'basePath' => '@tests/data/assets',
             'baseUrl' => '/',
         ],
     ],
