@@ -16,7 +16,7 @@ class WeuiJsAssetTest extends TestCase
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
         WeuiJsAsset::register($view);
-        $asset = new WeuiAsset();
+        $asset = new WeuiJsAsset();
         $this->assertEquals('@npm/weui.js', $asset->sourcePath);
         $this->assertArrayHasKey('only', $asset->publishOptions);
         $this->assertAttributeEquals(['dist/weui.min.js'], 'js', $asset);
