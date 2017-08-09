@@ -12,9 +12,9 @@ use Yii;
 use yii\web\AssetBundle;
 
 /**
- * DosAmigosAssetTest
+ * WeuiAssetTest
  */
-class DosAmigosAssetTest extends TestCase
+class WeuiAssetTest extends TestCase
 {
     public function testAsset()
     {
